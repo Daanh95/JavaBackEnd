@@ -17,6 +17,7 @@ public class Scan {
 	String barcode;
 	String productnaam;
 	int prijs;
+	
 	public long getId() {
 		return id;
 	}

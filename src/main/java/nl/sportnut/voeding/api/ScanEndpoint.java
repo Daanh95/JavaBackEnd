@@ -66,4 +66,6 @@ public class ScanEndpoint {
 	public Iterable<Scan> A () {
 		return scs.getAll();
 	}
+	
+	
 }
