@@ -3,6 +3,7 @@ package nl.sportnut.voeding.api;
 import java.time.LocalDate;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,6 +18,7 @@ import nl.sportnut.voeding.gebruikers.GebruikerService;
 import nl.sportnut.voeding.model.Gebruikers;
 
 @RestController
+@CrossOrigin(maxAge = 3600)
 public class KlantEndpoint {
 	private static final Gebruikers String = null;
 	@Autowired

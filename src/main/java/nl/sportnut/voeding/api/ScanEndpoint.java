@@ -3,6 +3,7 @@ package nl.sportnut.voeding.api;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -12,6 +13,7 @@ import nl.sportnut.voeding.controller.ScanService;
 import nl.sportnut.voeding.model.Scan;
 
 @RestController
+@CrossOrigin(maxAge = 3600)
 public class ScanEndpoint {
 	private static final Scan String = null;
 	@Autowired
